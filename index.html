@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arunesh Dwivedi</title>
+    <link rel="stylesheet" href="./mystyle.css" />
+    <link rel="stylesheet" href="./media-querries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <!-- Always-visible top bar -->
+      <div class="header-common">
+        <div class="logo">My Portfolio</div>
+        <!-- Light/Dark Mode Toggle (moved out of desktop-nav) -->
+        <button id="modeToggle" class="mode-toggle" aria-label="Toggle dark/light mode">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+      </div>
+    
+      <!-- Desktop Navigation (only on larger screens) -->
+      <nav id="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Hamburger Navigation (for small screens) -->
+      <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+          <button id="hamburgerIcon" class="hamburger-icon" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu-links">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+
+    <main>
+      <!-- Profile Section -->
+      <section id="profile">
+        <div class="section-pic-container">
+          <img src="assets/picofme.png" alt="Profile picture" id="mypic1" />
+        </div>
+        <div class="section-text">
+          <p class="section-text-p1">Hello! I'm</p>
+          <h1 class="title">Arunesh Dwivedi</h1>
+          <p class="section-text-p2"> Devops Engineer</p>
+          <div class="btn-container">
+            <button class="btn1-a" id="downloadCvBtn">Download CV</button>
+          </div>
+          <div id="social-container">
+            <a href="https://www.linkedin.com/in/arunesh-dwivedi/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/linkedin-logo.png" alt="LinkedIn profile" class="icon" />
+            </a>
+            <a href="https://github.com/AruneshDwivedi" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github-logo.jpeg" alt="Github profile" class="icon" />
+            </a>
+            <a href="https://kushald.hashnode.dev/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/blogging.jpg" alt="Hashnode profile" class="icon" />
+            </a>
+        </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="About">
+        <p class="section-text-p1">Get to know more about me</p>
+        <h2 class="title">About me</h2>
+        <p id="title-summary">Passionate DevOps Engineer with expertise in cloud technologies, automation, and CI/CD pipelines. Dedicated to optimizing workflows and deploying scalable solutions. 🚀</p>
+        <div class="section-container">
+          <div class="section-pic-container">
+            <img src="./assets/profile-round.png" alt="Profile picture" class="about-pic" />
+          </div>
+          <div class="about-details-container">
+            <div class="education-container">
+              <h3 id="edu1">Education</h3>
+              <div class="education-grid">
+                <div class="education-item">
+                  <img src="./assets/education.jpeg" alt="Education icon" class="icon" />
+                  <h4>Bachelor's Degree</h4>
+                  <p><strong>Computer Science & Information Technology</strong></p>
+                  <p>I hold a Bachelor's degree in Computer Science & Information Technology, providing a solid foundation in software development and systems architecture.</p>
+                </div>
+                <div class="education-item">
+                  <img src="./assets/education.jpeg" alt="Education icon" class="icon" />
+                  <h4>Master's Degree</h4>
+                  <p><strong>Artificial Intelligence & Data Analysis</strong></p>
+                  <p>Currently pursuing a Master’s in Artificial Intelligence & Data Analysis, I'm expanding my expertise in automation and data-driven solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+<section id="Skills">
+    <p class="section-text-p1">Explore My</p>
+    <h2 class="title">Skills</h2>
+    <div class="skills-details-container">
+        <div class="about-container">
+            <!-- DevOps Skills -->
+            <div class="details-container">
+                <h3 class="skills-sub-title">DevOps Skills</h3>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Docker</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Linux</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Terraform</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Kubernetes</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>AWS</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Jenkins</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Bash Scripting</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Ansible</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>CI/CD Pipelines</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Prometheus</h4></div>
+                    </article>
+                </div>
+            </div>
+            <!-- Programming Skills -->
+            <div class="details-container">
+                <h3 class="skills-sub-title">Programming & Technical Skills</h3>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Python</h4></div>
+                    </article>
+
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>JavaScript</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>SQL</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>REST APIs</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Jira</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Git</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Databases</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Networking</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>YAML</h4></div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                        <div><h4>Nginx</h4></div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <!-- Projects Section -->
+      <section id="Projects">
+        <p class="section-text-p1">Browse my recent work</p>
+        <h2 class="title">Projects</h2>
+        <div class="skills-details-container">
+          <div class="about-container">
+            <div class="details-container color-container">
+              <div class="artical-container">
+                <img src="./assets/project-one.png" alt="Project One" class="Project-img" />
+              </div>
+              <h3 class="skills-sub-title project-title">Secure Cloud Deployment with VPC</h3>
+              <div class="btn-container">
+                <button class="btn btn1-a Project-btn" data-link="https://github.com/AruneshDwivedi/AWS-Proj1">Github Project</button>
+              </div>
+            </div>
+
+                 <!-------project2-------->
+            <div class="details-container color-container">
+              <div class="artical-container">
+                <img src="./assets/project-two.png" alt="Project Two" class="Project-img" />
+              </div>
+              <h3 class="skills-sub-title project-title">Movie Catalogue Visualization Project</h3>
+              <div class="btn-container">
+                <button class="btn btn1-a Project-btn" data-link="https://github.com/AruneshDwivedi/AWS-Proj2">Github Project</button>
+
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="artical-container">
+                <img src="./assets/project-three.png" alt="Project Three" class="Project-img" />
+              </div>
+              <h3 class="skills-sub-title project-title"> End-to-End Project on Amazon EKS</h3>
+              <div class="btn-container">
+                <button class="btn btn1-a Project-btn" data-link="https://github.com/AruneshDwivedi/k8s-eks-proj">Github Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+
+
+<!-- Contact Section -->
+<section id="Contact">
+    <p class="section-text-p1">Get in Touch</p>
+    <h2 class="title">Contact Me</h2>
+    <div class="contact-info-upper-container">
+      
+      <div class="contact-info-container">
+        <img src="./assets/mail.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:arunesh.devops@gmail.com">arunesh.devops@gmail.com</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/linked.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/arunesh-dwivedi/" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <a href="tel:+916375464347">
+          <i class="fa fa-phone" style="font-size:24px; margin-right: 8px;"></i>
+          +91 63754 64347
+        </a>
+      </div>
+
+    </div>
+</section>
+
+  
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 Arunesh Dwivedi. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
