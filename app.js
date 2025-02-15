@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Download CV button event
     downloadCvBtn.addEventListener('click', () => {
-        window.open('assets/Arunesh-resume.pdf', '_blank');
+        window.open('assets/Aruneshresume_2025.pdf', '_blank');
     });
 
     // Project buttons event (opens provided links)
